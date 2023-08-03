@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsup src/index.ts --minify",
+    "dev": "npx tsc --watch",
+    "build": "npx tsc",
     "test": "jest"
   },
   "author": "PopaCubede",
@@ -19,8 +19,6 @@
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1",
-    "tsup": "^7.2.0",
-    "tsx": "^3.12.7",
     "typescript": "^5.1.6"
   },
   "dependencies": {
