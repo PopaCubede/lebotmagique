@@ -4,7 +4,7 @@ const discord_js_1 = require("discord.js");
 const event = {
     name: discord_js_1.Events.ClientReady,
     once: true,
-    execute(client) {
+    async execute(client) {
         console.log(`Connected as: ${client?.user?.tag}`);
     }
 };

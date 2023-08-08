@@ -1,9 +1,8 @@
-import { Client } from "discord.js";
 import { readdirSync } from "fs";
 import { join } from "path";
-import { BotEvent } from "../../types";
+import { BotClient, BotEvent } from "../../types";
 
-module.exports = (client: Client) => {
+module.exports = (client: BotClient) => {
     let eventsDir = join(__dirname, '../events')
 
     readdirSync(eventsDir).forEach(file => {
